@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عرض العمليات الإدارية - Présentation des Processus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%, #fff7ed 100%);
+            min-height: 100vh;
+            padding: 2rem;
+            direction: rtl;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            color: #0f766e;
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #4b5563;
+            font-size: 1.5rem;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .card {
+            background: white;
+            border: 2px solid #99f6e4;
+            border-radius: 0.75rem;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: #14b8a6;
+        }
+        
+        .process-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 4rem;
+            height: 4rem;
+            background: #0d9488;
+            color: white;
+            border-radius: 50%;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        
+        .card-title {
+            color: #0f766e;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .card-subtitle {
+            color: #6b7280;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            direction: ltr;
+        }
+        
+        .card-description {
+            color: #9ca3af;
+            font-size: 0.875rem;
+        }
+        
+        .footer {
+            text-align: center;
+            color: #6b7280;
+            font-size: 0.875rem;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #d1d5db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>عرض العمليات الإدارية</h1>
+            <p class="subtitle">Présentation des Processus Administratifs</p>
+        </div>
+        
+        <div class="grid">
+            
+                <a href="process-1.html" class="card">
+                    <div class="process-number">1</div>
+                    <h3 class="card-title">تسجيل طالب العمل </h3>
+                    <p class="card-subtitle">Inscription initiale sur la plateforme</p>
+                    <p class="card-description">عملية التسجيل الأولي لطالبي العمل  على منصة وسيط 2</p>
+                </a>
+            
+                <a href="process-2.html" class="card">
+                    <div class="process-number">2</div>
+                    <h3 class="card-title">التسجيل النهائي في المنحة حضوريا</h3>
+                    <p class="card-subtitle">Inscription finale en présentiel</p>
+                    <p class="card-description">إتمام عملية التسجيل النهائي من قبل المعني حضوريا في الوكالة المحلية</p>
+                </a>
+            
+                <a href="process-3.html" class="card">
+                    <div class="process-number">3</div>
+                    <h3 class="card-title">الفحص و المراقبة الشهرية</h3>
+                    <p class="card-subtitle">Contrôle et suivi mensuel</p>
+                    <p class="card-description">نظام المراقبة الدورية والفحص الشهري للمستفيدين</p>
+                </a>
+            
+                <a href="process-4.html" class="card">
+                    <div class="process-number">4</div>
+                    <h3 class="card-title">تعليق و توقيف المنحة</h3>
+                    <p class="card-subtitle">Suspension et arrêt de l'allocation</p>
+                    <p class="card-description">إجراءات تعليق أو إيقاف المنحة للمستفيدين</p>
+                </a>
+            
+                <a href="process-5.html" class="card">
+                    <div class="process-number">5</div>
+                    <h3 class="card-title">صب المنحة</h3>
+                    <p class="card-subtitle">Versement de l'allocation</p>
+                    <p class="card-description">عملية صرف ودفع المنحة للمستفيدين المؤهلين</p>
+                </a>
+            
+                <a href="process-6.html" class="card">
+                    <div class="process-number">6</div>
+                    <h3 class="card-title">إسترجاع مستحقات المنحة</h3>
+                    <p class="card-subtitle">Récupération des droits</p>
+                    <p class="card-description">إجراءات استرجاع المستحقات والمبالغ المدفوعة بالخطأ</p>
+                </a>
+            
+                <a href="process-7.html" class="card">
+                    <div class="process-number">7</div>
+                    <h3 class="card-title">التأمين الاجتماعي</h3>
+                    <p class="card-subtitle">Assurance sociale</p>
+                    <p class="card-description">تغطية التأمين الاجتماعي للمستفيدين من المنحة</p>
+                </a>
+            
+        </div>
+        
+        <div class="footer">
+            <p>عرض العمليات الإدارية | Présentation des Processus Administratifs</p>
+            <p style="margin-top: 0.5rem;">تم إنشاؤه بواسطة نظام العرض الإلكتروني</p>
+        </div>
+    </div>
+</body>
+</html>
